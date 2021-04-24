@@ -1,6 +1,3 @@
-/**
- * 
- */
 package br.inatel.pos.soa.calculos;
 
 import java.rmi.RemoteException;
