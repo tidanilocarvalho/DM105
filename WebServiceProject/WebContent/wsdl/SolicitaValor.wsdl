@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://calculosprovider.soa.pos.inatel.br" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://calculosprovider.soa.pos.inatel.br" xmlns:intf="http://calculosprovider.soa.pos.inatel.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://calculosprovider.soa.pos.inatel.br" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="calcular">
+    <complexType>
+     <sequence>
+      <element name="marca" type="xsd:string"/>
+      <element name="modelo" type="xsd:string"/>
+      <element name="ano" type="xsd:int"/>
+      <element name="idade" type="xsd:int"/>
+      <element name="local" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="calcularResponse">
+    <complexType>
+     <sequence>
+      <element name="calcularReturn" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="calcularResponse">
+
+      <wsdl:part element="impl:calcularResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="calcularRequest">
+
+      <wsdl:part element="impl:calcular" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="SolicitaValor">
+
+      <wsdl:operation name="calcular">
+
+         <wsdl:input message="impl:calcularRequest" name="calcularRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:calcularResponse" name="calcularResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="SolicitaValorSoapBinding" type="impl:SolicitaValor">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="calcular">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="calcularRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="calcularResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="SolicitaValorService">
+
+      <wsdl:port binding="impl:SolicitaValorSoapBinding" name="SolicitaValor">
+
+         <wsdlsoap:address location="http://localhost:8080/WebServiceProject/services/SolicitaValor"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

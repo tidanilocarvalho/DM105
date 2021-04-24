@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//src/br/unicamp/ic/webservices/ageriskscoring/AgeRiskScoring.java=UTF-8
+encoding//src/br/unicamp/ic/webservices/ageriskscoring/AgeRiskScoringPortBindingStub.java=UTF-8
+encoding//src/br/unicamp/ic/webservices/ageriskscoring/AgeRiskScoringWSService.java=UTF-8
+encoding//src/br/unicamp/ic/webservices/ageriskscoring/AgeRiskScoringWSServiceLocator.java=UTF-8
+encoding//src/br/unicamp/ic/webservices/fipe/Fipe.java=UTF-8
+encoding//src/br/unicamp/ic/webservices/fipe/FipePortBindingStub.java=UTF-8
+encoding//src/br/unicamp/ic/webservices/fipe/FipeWSService.java=UTF-8
+encoding//src/br/unicamp/ic/webservices/fipe/FipeWSServiceLocator.java=UTF-8
+encoding//src/br/unicamp/ic/webservices/fipe/TabelaFipe.java=UTF-8
+encoding//src/br/unicamp/ic/webservices/regionriskscoring/Regiao.java=UTF-8
+encoding//src/br/unicamp/ic/webservices/regionriskscoring/RegionRiskScoring.java=UTF-8
+encoding//src/br/unicamp/ic/webservices/regionriskscoring/RegionRiskScoringPortBindingStub.java=UTF-8
+encoding//src/br/unicamp/ic/webservices/regionriskscoring/RegionRiskScoringWSService.java=UTF-8
+encoding//src/br/unicamp/ic/webservices/regionriskscoring/RegionRiskScoringWSServiceLocator.java=UTF-8
