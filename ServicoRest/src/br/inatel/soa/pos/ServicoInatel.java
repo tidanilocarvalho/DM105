@@ -10,6 +10,7 @@
 // **********************************************************************
 package br.inatel.soa.pos;
 
+import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -18,6 +19,7 @@ import javax.ws.rs.Produces;
 public class ServicoInatel
 {
 
+    @GET
     @Produces ("application/json")
     @Path ("teste/{nome}")
     public String aloWorld(@PathParam ("nome") String name)
